@@ -6,7 +6,7 @@ const db = require('../db/db.json');
 const fs = require('fs');
 
 
-// GET Route for retrieving all the feedback
+// GET Route for retrieving all the notes
 notes.get('/', (req, res) =>
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
 );
@@ -20,6 +20,7 @@ notes.get('/:id', (req, res) =>{
     }
 });
 
+// POST Route to read and append note
 notes.post('/', (req, res) => {
     const { title, text } = req.body;
 
@@ -47,6 +48,7 @@ notes.post('/', (req, res) => {
     }
 });
 
+// DELETE route to delete note based on requested id
 // https://www.tabnine.com/code/javascript/functions/express/Express/delete
 notes.delete('/:id', (req, res) => {
     const id = req.params.id;
