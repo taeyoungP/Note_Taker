@@ -47,11 +47,11 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ![Note Written and save button shows up](./Assets/Note_filled.png)
 
-User can take note(s) on this page and save it/them. (User must fill out both title and text in order to save the note.)
+User can take note(s) on this page and save it/them. User must fill out both title and text in order to save the note. Once user fills out these, the save icon will show up on the right top corner.
 
 ![See Note](./Assets/see_note.png)
 
-Once it got saved, user can see thier notes or can delete them from left column of the page.
+Once it got saved, user can see thier notes. User can also delete note(s) them from left column of the page by clicking trash bin icon next their notes. 
 
 User can create new note by clicking plus icon on the right top of the page.
  
